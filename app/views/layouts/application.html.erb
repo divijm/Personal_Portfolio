@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PersonalpDm</title>
+    <title>Divij Mehra</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
   </head>
 
   <body>
+    <%= render 'partials/nav' %>
     <%= yield %>
+    <%= render 'partials/socialfooter' %>
+    <%= render 'partials/footer' %>
   </body>
 </html>

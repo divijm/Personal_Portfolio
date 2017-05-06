@@ -1,2 +1,29 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<%= render 'partials/jumbotron' %>
+
+<%= render 'partials/workhp' %>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+  <script src="assets/js/bootstrap.min.js"></script>
+
+<script>
+(function() {
+
+    var quotes = $(".quotes");
+    var quoteIndex = -1;
+
+    function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length)
+            .fadeIn(1500)
+            .delay(1000)
+            .fadeOut(1500, showNextQuote);
+    }
+
+    showNextQuote();
+
+})();
+</script>
