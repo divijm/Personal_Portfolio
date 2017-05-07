@@ -13,6 +13,8 @@ Not a lot of design process was used to make this portfolio - mainly due to time
 
 I did however want to make a much more simpler, easy-on-the-eyes viewing and hence have gone for a grey-ish colour scheme which makes it seem professional in my opinion.
 
+Furthermore, multiple code snippets from themes and other people's sample/source code were taken to compile this website - to reduce the time it took to finish this project! :) 
+
 ## Logo
 
 I wanted to create a logo which I can re-use in any projects I do later on in my web design career - and I feel like the one here is at it's first iteration!
