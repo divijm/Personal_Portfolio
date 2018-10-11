@@ -2,16 +2,12 @@
 
 one:
   title: MyString
-  date: 2018-10-11
   content: MyText
   author: MyString
-  topic: MyString
   category_id: 1
 
 two:
   title: MyString
-  date: 2018-10-11
   content: MyText
   author: MyString
-  topic: MyString
   category_id: 1
