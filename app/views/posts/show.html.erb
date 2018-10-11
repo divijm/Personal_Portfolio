@@ -15,9 +15,9 @@
 				<p>Posted: <b><%= time_ago_in_words(@post.created_at)  %></b> ago</p>
         <p><%= @post.author %></p>
 
-        <%= link_to "Edit", edit_post_path(@post) %>
-        |
-        <%= link_to "Delete", @post, method: :delete, data: { confirm: "Are you sure?" } %>
+        <button type="submit" class="btn btn-default"><%= link_to "Edit", edit_post_path(@post)%></button>
+        <button type="submit" class="btn btn-default"> <%= link_to "Delete", @post, method: :delete, data: { confirm: "Are you sure?" } %></button>
+       
         </div>
 			</div>
 

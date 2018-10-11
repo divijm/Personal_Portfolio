@@ -2,6 +2,7 @@
 
     <%= render 'partials/error_messages'%>
 
+     <%= f.label :category %><br>
      <%= f.collection_select(:category_id, Category.all, :id, :name, {prompt: "Choose a category" }) %><br>
      <%= f.label :title %><br>
      <%= f.text_field :title, placeholder: "Type the post title here" %><br>
@@ -12,3 +13,4 @@
      <%= f.submit %>
 
 <% end %>
+
