@@ -1,0 +1,21 @@
+<section id="works"></section>
+<div class="container">
+	<div class="row centered mt">
+		<h1 class="mt mb">My Thoughts</h1>
+  </div>
+</div>
+
+<div class="container">
+		<div class="row centered mb">
+			<div class="col-lg-8 col-lg-offset-2">
+				<% @posts.each do |post| %>
+						<h1><%= link_to post.title, post %></h1>
+            <p><%= post.created_at.strftime("%B, %d, %Y") %></p>
+				<% end %>
+
+         <a href="/posts/new"><button type="submit" class="btn btn-default mt">New Post</button></a>
+			</div>
+
+     
+		</div>
+	</div>
